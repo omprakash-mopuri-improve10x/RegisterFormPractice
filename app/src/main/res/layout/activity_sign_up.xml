@@ -12,7 +12,6 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="SIGNUP INFO"
         android:textColor="#000000"
@@ -22,9 +21,10 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:text="Email Address"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/email_address_txt"
@@ -39,7 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Password"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/password_txt"
@@ -54,7 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Confirm Password"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/conform_password_txt"

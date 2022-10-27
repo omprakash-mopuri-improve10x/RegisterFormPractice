@@ -12,7 +12,6 @@
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="PROFESSIONAL INFO"
         android:textColor="#000000"
@@ -22,9 +21,10 @@
         android:id="@+id/textView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:text="Current Company"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/current_company_txt"
@@ -39,7 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Total Experience"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/total_experience_txt"
@@ -54,7 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Designation"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/designation_txt"
