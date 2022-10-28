@@ -19,11 +19,11 @@ public class CreditCardDetailsActivity extends AppCompatActivity {
     public void handleNextButton() {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        Button nextBtn8 = findViewById(R.id.next_btn8);
-        nextBtn8.setOnClickListener(view -> {
+        Button nextBtn = findViewById(R.id.next_btn);
+        nextBtn.setOnClickListener(view -> {
             EditText cardNumberTxt = findViewById(R.id.card_number_txt);
             String cardNumber = cardNumberTxt.getText().toString();
-            EditText cardHolderTxt = findViewById(R.id.card_holder);
+            EditText cardHolderTxt = findViewById(R.id.card_holder_txt);
             String cardHolder = cardHolderTxt.getText().toString();
             EditText expiryTxt = findViewById(R.id.expiry_txt);
             String expiry = expiryTxt.getText().toString();
@@ -40,8 +40,8 @@ public class CreditCardDetailsActivity extends AppCompatActivity {
     }
 
     public void handleBackButton() {
-        Button backBtn8 = findViewById(R.id.back_btn8);
-        backBtn8.setOnClickListener(view -> {
+        Button backBtn = findViewById(R.id.back_btn);
+        backBtn.setOnClickListener(view -> {
             finish();
         });
     }

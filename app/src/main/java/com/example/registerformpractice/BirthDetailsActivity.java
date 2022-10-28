@@ -27,8 +27,8 @@ public class BirthDetailsActivity extends AppCompatActivity {
         //String userName = intent.getStringExtra("userName");
         //String firstName = intent.getStringExtra("firstName");
         //String lastName = intent.getStringExtra("lastName");
-        Button nextBtn5 = findViewById(R.id.next_btn5);
-        nextBtn5.setOnClickListener(view -> {
+        Button nextBtn = findViewById(R.id.next_btn);
+        nextBtn.setOnClickListener(view -> {
             Intent nextBtnIntent = new Intent(this, ProfessionalInfoActivity.class);
             EditText dateOfBirthTxt = findViewById(R.id.date_of_birth_txt);
             String dateOfBirth = dateOfBirthTxt.getText().toString();
@@ -48,8 +48,8 @@ public class BirthDetailsActivity extends AppCompatActivity {
     }
 
     public void handleBackButton() {
-        Button backBtn5 = findViewById(R.id.back_btn5);
-        backBtn5.setOnClickListener(view -> {
+        Button backBtn = findViewById(R.id.back_btn);
+        backBtn.setOnClickListener(view -> {
             finish();
         });
     }

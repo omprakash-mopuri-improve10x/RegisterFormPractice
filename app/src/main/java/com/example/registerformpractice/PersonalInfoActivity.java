@@ -24,8 +24,8 @@ public class PersonalInfoActivity extends AppCompatActivity {
         //String email = intent.getStringExtra("email");
         //String password = intent.getStringExtra("password");
         //String conformPassword = intent.getStringExtra("confirmPassword");
-        Button nextBtn2 = findViewById(R.id.next_btn2);
-        nextBtn2.setOnClickListener(view -> {
+        Button nextBtn = findViewById(R.id.next_btn);
+        nextBtn.setOnClickListener(view -> {
             Intent nextBtnIntent = new Intent(this, AddressActivity.class);
             EditText userNameTxt = findViewById(R.id.user_name_txt);
             String userName = userNameTxt.getText().toString();
@@ -45,8 +45,8 @@ public class PersonalInfoActivity extends AppCompatActivity {
     }
 
     public void handleBackButton() {
-        Button backBtn1 = findViewById(R.id.back_btn1);
-        backBtn1.setOnClickListener(view -> {
+        Button backBtn = findViewById(R.id.back_btn);
+        backBtn.setOnClickListener(view -> {
            finish();
         });
     }

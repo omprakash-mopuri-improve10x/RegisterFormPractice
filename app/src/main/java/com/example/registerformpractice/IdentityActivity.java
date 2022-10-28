@@ -20,8 +20,8 @@ public class IdentityActivity extends AppCompatActivity {
     public void handleNextButton() {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        Button nextBtn6 = findViewById(R.id.next_btn6);
-        nextBtn6.setOnClickListener(view -> {
+        Button nextBtn = findViewById(R.id.next_btn);
+        nextBtn.setOnClickListener(view -> {
             Intent nextBtnIntent = new Intent(this, SuccessActivity.class);
             nextBtnIntent.putExtras(bundle);
             EditText panNumberTxt = findViewById(R.id.pan_number_txt);
@@ -35,8 +35,8 @@ public class IdentityActivity extends AppCompatActivity {
     }
 
     public void handleBackButton() {
-        Button backBtn6 = findViewById(R.id.back_btn6);
-        backBtn6.setOnClickListener(view -> {
+        Button backBtn = findViewById(R.id.back_btn);
+        backBtn.setOnClickListener(view -> {
             finish();
         });
     }

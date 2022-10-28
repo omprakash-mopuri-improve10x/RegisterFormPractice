@@ -32,8 +32,8 @@ public class BankAccountActivity extends AppCompatActivity {
         //String currentCompany = intent.getStringExtra("currentCompany");
         //String totalExperience = intent.getStringExtra("totalExperience");
         //String designation = intent.getStringExtra("designation");
-        Button nextBtn3 = findViewById(R.id.next_btn3);
-        nextBtn3.setOnClickListener(view -> {
+        Button nextBtn = findViewById(R.id.next_btn);
+        nextBtn.setOnClickListener(view -> {
             Intent nextBtnIntent = new Intent(this, CreditCardDetailsActivity.class);
             EditText bankNameTxt = findViewById(R.id.bank_name_txt);
             String bankName = bankNameTxt.getText().toString();
@@ -64,8 +64,8 @@ public class BankAccountActivity extends AppCompatActivity {
     }
 
     public void handleBackButton() {
-        Button backBtn3 = findViewById(R.id.back_btn3);
-        backBtn3.setOnClickListener(view -> {
+        Button backBtn = findViewById(R.id.back_btn);
+        backBtn.setOnClickListener(view -> {
            finish();
         });
     }

@@ -20,8 +20,8 @@ public class AddressActivity extends AppCompatActivity {
     public void handleNextButton() {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        Button nextBtn7 = findViewById(R.id.next_btn7);
-        nextBtn7.setOnClickListener(view -> {
+        Button nextBtn = findViewById(R.id.next_btn);
+        nextBtn.setOnClickListener(view -> {
             EditText houseNoTxt = findViewById(R.id.house_no_txt);
             String houseNo = houseNoTxt.getText().toString();
             EditText streetTxt = findViewById(R.id.street_txt);
@@ -44,8 +44,8 @@ public class AddressActivity extends AppCompatActivity {
     }
 
     public void handleBackButton() {
-        Button backBtn7 = findViewById(R.id.back_btn7);
-        backBtn7.setOnClickListener(view -> {
+        Button backBtn = findViewById(R.id.back_btn);
+        backBtn.setOnClickListener(view -> {
             finish();
         });
     }

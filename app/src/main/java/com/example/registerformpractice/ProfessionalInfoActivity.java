@@ -29,8 +29,8 @@ public class ProfessionalInfoActivity extends AppCompatActivity {
         //String lastName = intent.getStringExtra("lastName");
         //String dateOfBirth = intent.getStringExtra("dateOfBirth");
         //String placeOfBirth = intent.getStringExtra("placeOfBirth");
-        Button nextBtn4 = findViewById(R.id.next_btn4);
-        nextBtn4.setOnClickListener(view -> {
+        Button nextBtn = findViewById(R.id.next_btn);
+        nextBtn.setOnClickListener(view -> {
             Intent nextBtnIntent = new Intent(this, BankAccountActivity.class);
             EditText currentCompanyTxt = findViewById(R.id.current_company_txt);
             String currentCompany = currentCompanyTxt.getText().toString();

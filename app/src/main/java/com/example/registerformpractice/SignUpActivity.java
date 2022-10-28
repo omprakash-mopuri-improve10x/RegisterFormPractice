@@ -18,14 +18,14 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void handleNextButton() {
-        Button nextBtn1 = findViewById(R.id.next_btn1);
-        nextBtn1.setOnClickListener(view -> {
+        Button nextBtn = findViewById(R.id.next_btn);
+        nextBtn.setOnClickListener(view -> {
             Intent intent = new Intent(this, PersonalInfoActivity.class);
             EditText emailAddressTxt = findViewById(R.id.email_address_txt);
             String emailAddress = emailAddressTxt.getText().toString();
             EditText passwordTxt = findViewById(R.id.password_txt);
             String password = passwordTxt.getText().toString();
-            EditText conformPasswordTxt = findViewById(R.id.conform_password_txt);
+            EditText conformPasswordTxt = findViewById(R.id.confirm_password_txt);
             String conformPassword = conformPasswordTxt.getText().toString();
             intent.putExtra("email", emailAddress);
             intent.putExtra("password", password);
